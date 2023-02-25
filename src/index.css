@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  width: 100%;
+  height: 100vh;
+  background: #C5E4E7;
+  display: flex;
+  justify-content: center;
+
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  width: 100%;
+  min-width: 375px;
+  padding: 2em;
+  background: #FFFFFF;
+  box-shadow: 0px 32px 43px 0px #4FA6AF33;
+  border-radius: 25px;
+  height: 789px;
+  align-self:flex-end;
+  justify-self: flex-end;
+}
+
+.inp {
+  background-color: #F3F9FA;
+  outline-color: #26C2AE;
+  font-size:24px;
+  width: 311px;
+  padding: 0;
+  color: #00474B;
+}
+
+.zero__input {
+  background-color: #F3F9FA;
+  outline-color: #E17457;
+  font-size:24px;
+  width: 311px;
+  padding: 0;
+  color: #00474B;
+}
+
+.bill {
+  color: #5E7A7D;
+}
+
+.dollar {
+  transform: translate(20px,-1.38em);
+}
+
+.percent {
+  background-color: #00474B;
+  width: 146px;
+}
+
+.active__percent {
+  background-color: #26C2AE;
+  width: 146px;
+  transition: 0.4s;
+}
+
+
+.tip {
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+
+
+.custom {
+  width: 146px;
+  justify-self: end;
+  border: none;
+  outline-color:#26C2AE;
+  color:#547878;
+  background-color: #F3F9FA;
+}
+
+.custom::placeholder, .inp::placeholder {
+  color: #547878;
+}
+
+.amount {
+  background-color: #00474B;
+}
+
+.person {
+  color: #7F9D9F;
+}
+
+.tip-price {
+  color: #26C2AE;
+}
+
+.reset {
+  background-color: #26C2AE;
+  color: #00474B;
+  transition: 0.4s;
+}
+
+.reset:hover, .percent:hover {
+  background-color: #9FE8DF;
+  transition: 0.4s;
+}
+
+.reseted {
+  background-color: #0D686D;
+  color: #00474B;
+}
+
+.zero-style {
+  color: #9EBBBD;
+}
+
+.zero {
+  margin-top: -29px;
+  font-size: 14px;
+  color: #E17457;
+}
+
+.billZero {
+  margin-top: -24px;
+  font-size: 14px;
+  color: #E17457;
+}
+
+
+@media (min-width:1024px) {
+  .box {
+    width: 920px;
+    height: 481px;
+    display: flex;
+  }
+
+  .amount {
+    width: 413px;
+    height: 417px;
+  }
+
+
+  .tip {
+    grid-template-columns: auto auto auto;
+  }
+
+  .percent {
+    width: 117px;
+  }
+
+  .active__percent {
+    width: 117px;
+  }
+
+  .custom {
+    width: 117px;
+  }
+
+  .inp {
+    width: 379px;
+    color: #00474B;
+  }
+
+  .zero__input {
+    width: 379px;
+    color: #00474B;
+  }
+
+  .zero {
+    margin-top: -30px;
+  }
+
+
+  .box {
+    padding-left: 48px;
+  }
+
+  .reset, .reseted {
+    margin-top: 137px;
+  }
+
+
+  .conteiner {
+    height: 100vh;
+  }
+
+  .zero-style {
+    color: #9EBBBD;
+  }
+}
